@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MailsComponent } from './mails/mails.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MailsComponent
   ],
   imports: [
     BrowserModule

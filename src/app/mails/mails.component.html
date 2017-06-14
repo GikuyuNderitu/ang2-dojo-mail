@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        <h3>Email</h3>
+      </th>
+      <th>
+        <h3>Importance</h3>
+      </th>
+      <th>
+        <h3>Subject</h3>
+      </th>
+      <th>
+        <h3>Content</h3>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let mail of mails">
+      <td>{{mail.email}}</td>
+      <td>
+        <span *ngIf="mail.importance">High</span>
+        <span *ngIf="!mail.importance">Low</span>
+      </td>
+      <td>{{mail.subject}}</td>
+      <td>{{mail.content}}</td>
+    </tr>
+  </tbody>
+</table>
